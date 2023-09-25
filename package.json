@@ -1,0 +1,17 @@
+{
+  "name": "wp_shortcodes_parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^20.6.4",
+    "typescript": "^5.2.2"
+  }
+}
