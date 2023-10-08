@@ -1,4 +1,4 @@
-import { generateUniqueID } from "../helpers/functions.js";
+import Randomizer from "../../helpers/randomizer.js";
 
 class Shortcode {
     readonly id: string; // shortcode's unique identifier
@@ -11,7 +11,7 @@ class Shortcode {
         private _children: Shortcode[], // shortcode's children
         attributes: Record<string, string>
     ) {
-        this.id = generateUniqueID()
+        this.id = Randomizer.generateUniqueID()
         this.attributes = JSON.stringify(attributes)
     }
 
@@ -201,3 +201,5 @@ class Shortcode {
         return result;
     }
 }
+
+export default Shortcode
