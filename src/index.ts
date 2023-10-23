@@ -1,7 +1,9 @@
 import path from "path"
+import { fileURLToPath } from 'url'
 import Tokenizer from "./lib/tokenizer.js"
 
-export const BASE_PATH = path.resolve(__dirname, '..')
+export const __filename = fileURLToPath(import.meta.url)
+export const BASE_PATH = path.dirname(__filename)
 export const SRC_PATH = path.resolve(BASE_PATH, 'src')
 export const JSON_DIRNAME = path.resolve(BASE_PATH, 'data/json')
 
