@@ -109,16 +109,16 @@ class Gutenizer implements ITokenizer {
    * Tokenizes a source string (or content) using the ruleset
    * @returns An array of tokens
    */
-  tokenize(): IToken[] {
+  *tokenize(): Generator<IToken[]> {
     // Reset the tokenizer
     this.reset();
 
     // Split the source into lines
     const lines = this._source.split(/\r?\n/);
 
-    // For each line, extract the tokens
-    lines.forEach((line, line_no) => {
-      this._line = line_no;
+    // for each line, extract the tokens
+    for (const line of lines) {
+      this._line++;
 
       // Extract the tokens from the line
       const tokens = this._extract(line);
@@ -126,7 +126,10 @@ class Gutenizer implements ITokenizer {
 
       // Update the cursor position
       this._cursor += line.length + 1;
-    });
+
+      // Yield the tokens
+      yield tokens;
+    }
 
     return this._tokens;
   }

@@ -142,11 +142,6 @@ const source: string = `<!-- wp:genesis-blocks/gb-testimonial {"testimonialImgID
 <!-- /wp:genesis-blocks/gb-columns -->`;
 
 const tokenizer = new Gutenizer(source);
-tokenizer.tokenize();
-
-// group tokens by type and calculate their frequencies
-console.log(tokenizer.tokens.reduce((acc: Record<string, number>, token) => {
-  const type = token.type;
-  acc[type] = acc[type] ? acc[type] + 1 : 1;
-  return acc;
-}, {}));
+for (const tokens of tokenizer.tokenize()) {
+  console.log(tokens);
+}

@@ -18,7 +18,7 @@ interface ITokenizer {
   readonly col_no: number;
 
   // Methods
-  tokenize(): IToken[];
+  tokenize(): Generator<IToken[]>;
   reset(): void;
 }
 
