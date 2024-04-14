@@ -1,6 +1,6 @@
 import { Gutenizer } from "./services/tokenizers";
 
-// test tokenizer.ts
+// test gutenizer.ts
 const source: string = `<!-- wp:genesis-blocks/gb-testimonial {"testimonialImgID":1035} -->
 <div style="background-color:#f2f2f2;color:#32373c" class="wp-block-genesis-blocks-gb-testimonial left-aligned gb-has-avatar gb-font-size-18 gb-block-testimonial"><div class="gb-testimonial-text"><p>Testimonial text</p></div><div class="gb-testimonial-info"><div class="gb-testimonial-avatar-wrap"><div class="gb-testimonial-image-wrap"><img class="gb-testimonial-avatar" src="https://kadence.ducopy.com/wp-content/uploads/2022/07/team-3-150x150.jpeg"/></div></div><h2 class="gb-testimonial-name" style="color:#32373c">Name</h2><small class="gb-testimonial-title" style="color:#32373c">Title</small></div></div>
 <!-- /wp:genesis-blocks/gb-testimonial -->

@@ -1,1 +1,1 @@
-export { default as container } from "@/containers/inversify.config";
+export { default as container } from "@/configs/inversify.config";
