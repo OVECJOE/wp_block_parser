@@ -1,9 +1,9 @@
-// type MatchFunc = (input: string) => void;
+type MatchFunc = () => void;
 
 interface IRegexerExpect {
   input?: string;
-  // readonly assertMatch: MatchFunc;
-  // readonly assertNoMatch: MatchFunc;
+  readonly toMatch: MatchFunc;
+  readonly toNotMatch: MatchFunc;
   // readonly assertMatchAll: MatchFunc;
   // readonly assertNoMatchAll: MatchFunc;
   // readonly assertMatchCapture: MatchFunc;

@@ -8,7 +8,7 @@
     "clean": "rimraf dist/*",
     "dev:watch": "tsx watch src/index.ts",
     "dev": "tsx src/index.ts",
-    "playground": "tsx src/playground.ts",
+    "playground": "tsx src/playground/regexer.play.ts",
     "format": "prettier --write 'src/**/*.{js,ts,json}'",
     "lint:all": "pnpm lint && pnpm tscCheck",
     "lint:fx": "eslint src/**/*.ts --fix",

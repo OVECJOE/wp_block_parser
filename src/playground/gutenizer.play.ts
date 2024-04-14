@@ -1,4 +1,4 @@
-import { Gutenizer } from "./services/tokenizers";
+import { Gutenizer } from "@/services/tokenizers";
 
 // test gutenizer.ts
 const source: string = `<!-- wp:genesis-blocks/gb-testimonial {"testimonialImgID":1035} -->
