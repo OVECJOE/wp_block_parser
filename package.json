@@ -58,7 +58,7 @@
     "*.{js,ts,json}": "prettier --write"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.6.1",
     "inversify": "^6.0.2",
     "js-yaml": "^4.1.0",
     "reflect-metadata": "^0.2.2",
