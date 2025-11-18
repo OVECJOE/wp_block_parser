@@ -60,7 +60,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "inversify": "^6.0.2",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^4.1.1",
     "reflect-metadata": "^0.2.2",
     "uuid": "^9.0.1"
   }
